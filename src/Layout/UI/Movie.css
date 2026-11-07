@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 20px;
+    padding: 20px;
+}
+/* Tablets */
+@media (max-width: 900px) {
+    .movie-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .movie-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small mobile */
+@media (max-width: 400px) {
+    .movie-container {
+        grid-template-columns: 1fr;
+    }
+}

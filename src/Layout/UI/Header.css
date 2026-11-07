@@ -1,0 +1,209 @@
+
+/* ===== GLOBAL HEADER ===== */
+
+.header-sec {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: #0b1020;
+    color: white;
+    overflow: hidden;
+}
+
+/* ===== TOP MEMBERSHIP SECTION ===== */
+
+.signloginsec {
+    min-height: 42px;
+    padding: 10px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #17152f, #25204a, #17152f);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.par p {
+    margin: 0;
+    font-size: 12px;
+    color: #c6c5db;
+    letter-spacing: 0.5px;
+}
+
+.login-signup {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.log-in {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #d7d4f5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.log-in:hover {
+    color: #a78bfa;
+    transform: translateY(-2px);
+}
+
+/* ===== MAIN NAVBAR ===== */
+
+.nab-bar {
+    min-height: 85px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(11, 16, 32, 0.95);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(167, 139, 250, 0.15);
+    animation: navbarAppear 0.8s ease;
+}
+
+/* ===== LOGO ===== */
+
+.logo h2 {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #a78bfa,
+        #38bdf8
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: logoShine 4s linear infinite;
+    cursor: pointer;
+}
+
+/* ===== NAVIGATION LINKS ===== */
+
+.nav-links nav {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #c7c8d8;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+/* Underline animation */
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: linear-gradient(90deg, #a78bfa, #38bdf8);
+    border-radius: 10px;
+    transform: translateX(-50%);
+    transition: width 0.35s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* ===== PAGE LOAD ANIMATION ===== */
+
+@keyframes navbarAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== LOGO SHINE ANIMATION ===== */
+
+@keyframes logoShine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+
+    .signloginsec {
+        padding: 10px 4%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .par p {
+        font-size: 10px;
+    }
+
+    .nab-bar {
+        padding: 20px 4%;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .logo h2 {
+        font-size: 23px;
+    }
+
+    .nav-links nav {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-links nav {
+        gap: 14px;
+    }
+
+    .login-signup {
+        gap: 15px;
+    }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .nab-bar,
+    .logo h2 {
+        animation: none;
+    }
+
+    .nav-links a,
+    .nav-links a::after,
+    .log-in {
+        transition: none;
+    }
+}
+ 
