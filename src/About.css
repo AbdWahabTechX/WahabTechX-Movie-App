@@ -1,0 +1,294 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-page {
+  background: #080d18;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+
+.about-hero {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 20px;
+
+  background:
+    linear-gradient(
+      rgba(5, 10, 20, 0.82),
+      rgba(5, 10, 20, 0.92)
+    ),
+    url("https://images.unsplash.com/photo-1440404653325-ab127d49abc1")
+    center/cover no-repeat;
+}
+
+.about-hero-content {
+  max-width: 750px;
+}
+
+.about-tag,
+.about-small-title {
+  color: #38bdf8;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.about-hero h1 {
+  font-size: clamp(38px, 5vw, 58px);
+  margin: 22px 0;
+  line-height: 1.2;
+}
+
+.about-hero h1 span {
+  color: #38bdf8;
+}
+
+.about-hero p {
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.about-btn {
+  display: inline-block;
+  padding: 15px 28px;
+  background: #0284c7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #38bdf8;
+  color: #080d18;
+  transform: translateY(-4px);
+}
+
+/* About Introduction */
+
+.about-intro {
+  padding: 90px 9%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.about-text h2 {
+  font-size: 36px;
+  line-height: 1.3;
+  margin: 18px 0;
+}
+
+.about-text p {
+  color: #94a3b8;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.about-text-link {
+  display: inline-block;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.about-text-link:hover {
+  color: white;
+}
+
+/* Section Heading */
+
+.about-section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-section-heading span {
+  color: #38bdf8;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.about-section-heading h2 {
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.about-section-heading p {
+  color: #94a3b8;
+}
+
+/* Mission Section */
+
+.mission-section {
+  padding: 80px 9%;
+  background: #0d1625;
+}
+
+.mission-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.mission-card {
+  background: #111c2e;
+  border: 1px solid #24364e;
+  padding: 35px 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+  border-color: #38bdf8;
+}
+
+.mission-icon {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.mission-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.mission-card p {
+  color: #94a3b8;
+  line-height: 1.8;
+}
+
+/* Features Section */
+
+.about-features {
+  padding: 90px 9%;
+}
+
+.about-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.about-feature {
+  background: #111c2e;
+  border: 1px solid #24364e;
+  padding: 30px 20px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.about-feature:hover {
+  border-color: #38bdf8;
+  transform: translateY(-6px);
+}
+
+.about-feature span {
+  font-size: 35px;
+}
+
+.about-feature h3 {
+  margin: 18px 0 12px;
+  font-size: 18px;
+}
+
+.about-feature p {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* CTA Section */
+
+.about-cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: #111c2e;
+}
+
+.about-cta h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.about-cta p {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .mission-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .about-hero {
+    min-height: 350px;
+  }
+
+  .about-intro {
+    padding: 60px 6%;
+  }
+
+  .about-image img {
+    height: 280px;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+  }
+
+  .mission-container,
+  .about-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-section,
+  .about-features {
+    padding: 60px 6%;
+  }
+
+  .about-section-heading h2,
+  .about-cta h2 {
+    font-size: 28px;
+  }
+}

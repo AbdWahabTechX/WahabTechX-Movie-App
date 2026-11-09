@@ -1,0 +1,157 @@
+.footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    padding: 60px 8% 20px;
+    margin-top: 50px;
+}
+
+/* Main Footer Layout */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 50px;
+    max-width: 1300px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+/* Brand Section */
+
+.footer-about h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.footer-about h2 span {
+    color: #38bdf8;
+}
+
+.footer-about p {
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 380px;
+}
+
+/* Social Icons */
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e293b;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    transform: translateY(-5px);
+}
+
+/* Quick Links */
+
+.footer-links h3,
+.footer-contact h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: grid;
+    gap: 14px;
+}
+
+.footer-links ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #38bdf8;
+    padding-left: 7px;
+}
+
+/* Contact Section */
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.footer-contact svg {
+    color: #38bdf8;
+    font-size: 17px;
+    flex-shrink: 0;
+}
+
+/* Bottom Footer */
+
+.footer-bottom {
+    border-top: 1px solid #334155;
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 850px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer {
+        padding: 40px 6% 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-about {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}

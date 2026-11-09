@@ -1,0 +1,140 @@
+.details-container {
+    min-height: 100vh;
+    background: #0f172a;
+    padding: 50px 7%;
+    color: white;
+}
+
+.details-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+.details-poster img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.details-content h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #f8fafc;
+}
+
+.movie-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.movie-meta span {
+    background: #334155;
+    padding: 7px 13px;
+    border-radius: 6px;
+}
+
+.imdb-rating {
+    color: #facc15;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.movie-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.movie-genres span {
+    padding: 8px 15px;
+    background: #0ea5e9;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.details-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.movie-plot {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.details-info {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.details-info p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.details-info strong {
+    color: white;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #0ea5e9;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #0284c7;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .details-container {
+        padding: 25px 15px;
+    }
+
+    .details-card {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .details-poster {
+        text-align: center;
+    }
+
+    .details-poster img {
+        max-width: 280px;
+    }
+
+    .details-content h1 {
+        font-size: 27px;
+    }
+}

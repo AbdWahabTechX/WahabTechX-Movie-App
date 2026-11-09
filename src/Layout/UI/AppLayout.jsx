@@ -1,7 +1,8 @@
 import { Outlet, useNavigation } from "react-router"
-import { Footer } from "./Footer"
 import { HeaderSection } from "./Header"
 import { LoadingPage } from "./Loading";
+import { Footer } from "./Footer";
+import { Home } from "../../HomePage";
 
 export const AppLayout = () => {
 
